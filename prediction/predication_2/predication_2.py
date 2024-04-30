@@ -1,10 +1,12 @@
 # Прогнозирование с несколькими выходами
 
+# Нейронная сеть
 def neuralNetwork(input, weighs):
     pred = elemMultiplication(input, weighs)
     return pred
 
 
+# Обход вектора весов и вычисление прогноза победы
 def elemMultiplication(num, vector):
     output = [0, 0, 0]
     assert (len(output) == len(vector))
@@ -17,5 +19,8 @@ wins = [0.65, 0.8, 0.8, 0.9]
 weights = [0.3, 0.2, 0.9]
 
 input = wins[0]
-pred = neuralNetwork(input, weights)
-print(pred)
+predication = neuralNetwork(input, weights)
+
+print(f"Вероятность травмы: {predication[0]} \n"
+      f"Вероятность победы: {predication[1]} \n"
+      f"Вероятность поражения: {predication[2]}")

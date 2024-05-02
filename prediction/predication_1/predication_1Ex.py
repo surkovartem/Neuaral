@@ -1,7 +1,7 @@
-# Несколько входов: полный выполняемый вход
+# Несколько входов: полный выполняемый вход (для всех 4х случаев игр)
 
 # Нейронная сеть, вычисляющая прогноз победы, с помощью метода wSum()
-def neural_network(input, weights):
+def neuralNetwork(input, weights):
     pred = wSum(input, weights)
     return pred
 
@@ -25,6 +25,9 @@ nFans = [1.2, 1.3, 0.5, 1.0]
 # веса
 weights = [0.1, 0.2, 0]
 
-input = [avrGameOfPlayer[0], wins[0], nFans[0]]
-predication = neural_network(input, weights)
-print(f"Вероятность победы: {predication}")
+input = [avrGameOfPlayer, wins, nFans]
+for i in range(4):
+    input = [avrGameOfPlayer[i], wins[i], nFans[i]]
+    prediction = neuralNetwork(input, weights)
+    print(f"Игра: {i + 1} \n"
+          f"Вероятность победы: {prediction} \n")

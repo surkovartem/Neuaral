@@ -1,4 +1,4 @@
-# Прогнозирование с несколькими выходами
+# Прогнозирование с несколькими выходами (для всех 4х случаев игр)
 
 # Нейронная сеть
 def neuralNetwork(input, weighs):
@@ -18,8 +18,10 @@ def elemMultiplication(num, vector):
 wins = [0.65, 0.8, 0.8, 0.9]
 weights = [0.3, 0.2, 0.9]
 
-input = wins[0]
-predication = neuralNetwork(input, weights)
-print(f"Вероятность травмы: {predication[0]} \n"
-      f"Вероятность победы: {predication[1]} \n"
-      f"Вероятность поражения: {predication[2]}")
+for i in range(4):
+    input = wins[i]
+    predication = neuralNetwork(input, weights)
+    print(f"Игра: {i + 1} \n"
+          f"Вероятность травмы: {predication[0]} \n"
+          f"Вероятность победы: {predication[1]} \n"
+          f"Вероятность поражения: {predication[2]}\n")

@@ -15,5 +15,4 @@ weights = np.array([0.1, 0.2, 0])
 
 input = np.array([avrGameOfPlayer[0], wins[0], nFans[0]])
 predication = neuralNetwork(input, weights)
-
 print(f"Вероятность победы: {predication}")

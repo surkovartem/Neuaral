@@ -1,8 +1,10 @@
-# Прогнозирование с несколькимим входами и выходами
+# Пронозирование на основе прогнозов
 
 # Нейронная сеть
 def neuralNetwork(input, weights):
-    pred = vecMatMultiplication(input, weights)
+    # Получение скрытого слоя
+    hid = vecMatMultiplication(input, weights[0])
+    pred = vecMatMultiplication(hid, weights[1])
     return pred
 
 
@@ -24,10 +26,16 @@ def wSum(input, weights):
     return output
 
 
-# веса
-weights = [[0.1, 0.1, -0.3],
-           [0.1, 0.2, 0.0],
-           [0.0, 1.3, 0.1]]
+weights1 = [[0.1, 0.2, -0.1],
+            [-0.1, 0.1, 0.9],
+            [0.1, 0.4, 0.1]]
+
+weights2 = [[0.3, 1.1, -0.3],
+            [0.1, 0.2, 0.0],
+            [0.0, 1.3, 0.1]]
+
+# Веса
+weights = [weights1, weights2]
 # текущее среднее число игр
 avrGameOfPlayer = [8.5, 9.5, 9.9, 9.0]
 # текущая доля игр, окончившихся победой (процент)

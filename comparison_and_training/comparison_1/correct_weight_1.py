@@ -8,7 +8,6 @@ def getError(predication, goal):
 
 avrGameOfPlayer = [8.5]
 winOrLoseBinary = [1]
-
 input = avrGameOfPlayer[0]
 weight = 0.1
 true = winOrLoseBinary[0]

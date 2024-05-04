@@ -1,7 +1,14 @@
+'''
+Обучение методом "Горячо-Холодно", на примере одной иттерации
+'''
+
+
+# Метод получение предсказания
 def neuralNetwork(input, weight):
     return input * weight
 
 
+# метод вычисления ошибки
 def getError(predication, goal):
     return (predication - goal) ** 2
 
@@ -26,10 +33,10 @@ predictionCorrectWeightDown = neuralNetwork(input, weight) - step
 errorDown = getError(predictionCorrectWeightDown, true)
 print(f"Ошибка при уменьшение веса: {errorDown}")
 
-if((error > errorDown) or (error > errorUp)):
-    if(errorDown < errorUp):
+if ((error > errorDown) or (error > errorUp)):
+    if (errorDown < errorUp):
         weight -= step
-    if(errorUp < errorDown):
+    if (errorUp < errorDown):
         weight += step
 
 print(f"Новое значение веса: {weight}\n")

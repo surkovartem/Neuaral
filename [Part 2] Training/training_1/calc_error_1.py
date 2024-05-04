@@ -1,3 +1,8 @@
+'''
+Пример вычисления ошибки.
+'''
+
+
 def neuralNetwork(input, weight):
     return input * weight
 

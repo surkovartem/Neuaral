@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="861f28e1-a6da-4863-bcf4-ee5d71642de0" name="Changes" comment="Корректировки веса">
-      <change afterPath="$PROJECT_DIR$/[Part 2] Training/training_1/training_1.py" afterDir="false" />
+    <list default="true" id="861f28e1-a6da-4863-bcf4-ee5d71642de0" name="Changes" comment="Обучение нейронное сети, методом &quot;Горячо холодно&quot;">
+      <change afterPath="$PROJECT_DIR$/[Part 2] Training/training_2/training_2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/[Part 2] Training/training_1/calc_error_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/[Part 2] Training/training_1/calc_error_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/[Part 2] Training/training_1/correct_weight_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/[Part 2] Training/training_1/training_itteration_1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +43,8 @@
     "Python.predication_2.executor": "Run",
     "Python.predication_2Ex.executor": "Run",
     "Python.training_1.executor": "Run",
+    "Python.training_2.executor": "Run",
+    "Python.training_itteration_1.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -78,7 +78,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714755498128</updated>
-      <workItem from="1714755499222" duration="9488000" />
+      <workItem from="1714755499222" duration="12676000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <option name="closed" value="true" />
@@ -112,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714775627096</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Обучение нейронное сети, методом &quot;Горячо холодно&quot;">
+      <option name="closed" value="true" />
+      <created>1714819867516</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714819867516</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,14 +130,17 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Init commit" />
     <MESSAGE value="Корректировки веса" />
-    <option name="LAST_COMMIT_MESSAGE" value="Корректировки веса" />
+    <MESSAGE value="Обучение нейронное сети, методом &quot;Горячо холодно&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обучение нейронное сети, методом &quot;Горячо холодно&quot;" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/NeuralNetwork$correct_weight_1.coverage" NAME="correct_weight_1 Coverage Results" MODIFIED="1714775252705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comparison_and_training/comparison_1" />
+    <SUITE FILE_PATH="coverage/NeuralNetwork$training_2.coverage" NAME="training_2 Coverage Results" MODIFIED="1714905670674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/[Part 2] Training/training_2" />
     <SUITE FILE_PATH="coverage/NeuralNetwork$predication_2Ex.coverage" NAME="predication_2Ex Coverage Results" MODIFIED="1714755620120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prediction/predication_2" />
     <SUITE FILE_PATH="coverage/NeuralNetwork$comparison.coverage" NAME="comparison Coverage Results" MODIFIED="1714773723809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comparison_and_training/comparison_1" />
-    <SUITE FILE_PATH="coverage/NeuralNetwork$training_1.coverage" NAME="training_1 Coverage Results" MODIFIED="1714819626361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/[Part 2] Training/training_1" />
+    <SUITE FILE_PATH="coverage/NeuralNetwork$training_1.coverage" NAME="training_1 Coverage Results" MODIFIED="1714829486781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/[Part 2] Training/training_1" />
     <SUITE FILE_PATH="coverage/NeuralNetwork$predication_2.coverage" NAME="predication_2 Coverage Results" MODIFIED="1714755616859" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prediction/predication_2" />
     <SUITE FILE_PATH="coverage/NeuralNetwork$predication_1.coverage" NAME="predication_1 Coverage Results" MODIFIED="1714755606341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/prediction/predication_1" />
+    <SUITE FILE_PATH="coverage/NeuralNetwork$training_itteration_1.coverage" NAME="training_itteration_1 Coverage Results" MODIFIED="1714829281190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/[Part 2] Training/training_1" />
   </component>
 </project>

@@ -18,7 +18,7 @@ def getError(prediction, targetPredication):
 
 
 # DIRECTION_AND_AMOUNT - как должен изменитья вес.
-# Три принципа: остановка, обращение знака, масштабирование.
+# Три свойства: остановка, обращение знака, масштабирование.
 def getDirectionAndAmount(prediction, targetPredication, input):
     return (prediction - targetPredication) * input
 
